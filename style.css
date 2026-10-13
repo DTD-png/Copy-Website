@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(28,69,135);
+    color: white;
+
+    #left{
+        background-color: yellow;
+        color: black;
+    }
+
+    .links{
+        color: white;
+    }
+
+    #right{
+        background-color: yellow;
+        color: black;
+    }
+
+    .linkFont{
+        color: white;
+    }
+
+    #togglebutton{
+        background-color: grey;
+    }
+
+    #colleges {
+        display: grid;
+    }
+
+    .colimg{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .APLogo{
+        max-width: 60px;
+        display: block;
+        margin-left: auto;
+    }
+
+    .ClubImages{
+        max-height: 100px;
+    }
+
+    .font {
+        font-size: 20px;
+    }
+
+    .carousel-slide {
+        display: flex;
+        align-items: center;
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .carousel-track {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .carousel-buttons {
+        background-color: yellow;
+    }
+
+}
