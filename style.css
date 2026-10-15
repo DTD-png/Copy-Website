@@ -3,17 +3,35 @@ body {
     color: white;
 
     #left{
-        background-color: yellow;
+        background-color: gold;
         color: black;
     }
 
     .links{
         color: white;
+        cursor: pointer;
     }
 
+    #hamburger {position: fixed; background-color: gold;}
+    #sidebar { display: grid; grid-column}
+
     #right{
-        background-color: yellow;
+        background-color: gold;
         color: black;
+    }
+
+    .carousel{
+        #left{
+            margin-left: auto;
+        }
+        img {
+            max-width: 500px;
+            max-height: 500px;
+            }
+        #right{
+
+            margin-right: auto;
+        }
     }
 
     .linkFont{
@@ -24,14 +42,17 @@ body {
         background-color: grey;
     }
 
-    #colleges {
+    .colleges {
         display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: center;
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
     }
 
-    .colimg{
-        max-width: 100px;
-        max-height: 100px;
-    }
 
     .APLogo{
         max-width: 60px;
@@ -47,24 +68,5 @@ body {
         font-size: 20px;
     }
 
-    .carousel-slide {
-        display: flex;
-        align-items: center;
-        max-width: 400px;
-        max-height: 400px;
-    }
-
-    .carousel-track {
-        display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .carousel-buttons {
-        background-color: yellow;
-    }
 
 }
