@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <title>FHS Computer Science Program</title>
 </head>
-
 <script> src="Index.js"></script>
 <link rel="Stylesheet" href="Style.css">
 
-<button id="hamburger"> ≣ </button>
+<div id="sidebar">
+    <button id="hamburger" onclick="openClose()" style="font-size: 20px; font-weight: bold;">≣</button>
+    <h1 class="sideFontTitle"> Computer Science Magnet Program</h1>
+    <h2 class="sideFont"> Freehold High School</h2>
+    <h3 class="sideFont"> Courses in the Program</h3>
+    <h3 class="sideFont"> Extracurricular Activities</h3>
+    <h3 class="sideFont"> Where our students have gone</h3>
+</div>
 
-<div id="Sidebar"> This is the side </div>
-
-<body id="body">
+<body id="main">
     <h1> Computer Science Magnet Program</h1>
     <p class="font"> The Computer Science Magnet Program is a rigorous four-year course of study designed for students who have an interest in computer science, technology, engineering, data, cybersecurity, and emerging fields such as artificial intelligence. The program provides students with the opportunity to develop a strong foundation in computer science while applying computational thinking, programming, mathematics, and problem-solving skills to authentic and increasingly complex challenges.</p>
     <p class="font"> The goal of the program is to prepare students for continued study and success in computer science and related STEM fields while developing the technical skills, creativity, collaboration, communication, and adaptability needed to thrive in a rapidly changing technological landscape. Students learn not only how to write code, but also how to design solutions, analyze data, develop algorithms, understand computing systems, consider the ethical implications of technology, and apply their knowledge to real-world problems.</p>
     <p class="font"> Students take a dedicated computer science course each year, with a progression that builds from foundational principles and programming to advanced computer science concepts, data structures and algorithms, cybersecurity, web development, discrete mathematics, artificial intelligence, and independent application of these skills.</p>
 
     <div class="carousel">
-        <button id="left"> ← </button>
+        <button id="left" onclick="left()"> ← </button>
         <div class="carousel-slides"> <!-- only have ONE image -->
             <img id="c1" src="https://i.ytimg.com/vi/CxGSnA-RTsA/hqdefault.jpg" alt="Slide 1">
             <img id="c2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC419YNLNoMlVD9UEzQbpVPLFnxwy7xSdbrMFJ4holrAcQeIO_OUa7HCfD&s=10" alt="Slide 2">
             <img id="c3" src="https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26100309/blur-close-up-code-computer-546819.jpg" alt="Slide 3">
         </div>
-        <button id="right"> → </button>
+        <button id="right" onclick="right()"> → </button>
     </div>
 
 
