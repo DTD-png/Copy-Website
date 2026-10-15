@@ -7,7 +7,7 @@ function openClose() {
         document.getElementById("sidebar").style.display = "none";
     }
 }
-
+//
 function carousel(){
 
 }
