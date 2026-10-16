@@ -6,14 +6,24 @@
 </head>
 <script> src="Index.js"></script>
 <link rel="Stylesheet" href="Style.css">
-<!-- -->
-<div id="sidebar">
-    <button id="hamburger" onclick="openClose()" style="font-size: 20px; font-weight: bold;">≣</button>
-    <h1 id="sideFontTitle"> Computer Science Magnet Program</h1>
-    <h2 class="sideFont"> Freehold High School</h2>
-    <h3 class="sideFont" onclick="seeCourses()"> Courses in the Program</h3>
-    <h3 class="sideFont" onclick="seeActivities()"> Extracurricular Activities</h3>
-    <h3 class="sideFont" onclick="seeAlumni()"> Where our students have gone</h3>
+
+<!-- HAALLPPP -->
+
+<div id="sidebar" style="position: sticky;">
+    <span id="hamburger" onclick="burger()" style="color: black; padding: 5px;">≣</span>
+    <h2 id="sideFontTitle"> Computer Science Magnet Program</h2>
+    <h3 class="sidestuff"> Freehold High School</h3>
+    <h3 class="sidestuff" id="coursesButton" onclick="courses()"> Courses in the Program</h3>
+    <div id="internal-courses">
+        <h2 href="#csp">AP Computer Science Principles</h2>
+        <h2 href="#csa">AP Computer Science A</h2>
+        <h2 href="#dsa">Honors Data Structures and Algorithms</h2>
+        <h2 href="#bs">Honors Computer Science Senior Capstone: Web, Data, and AI</h2>
+        <a href="#discrete">Honors Discrete Math and Cybersecurity</a>
+    </div>
+    <h3 class="sidestuff" href="#ecs"> Extracurricular Activities</h3>
+    <h3 class="sidestuff" href="#colleges"> Where our students have gone</h3>
+
 </div>
 
 <div id="main">
@@ -22,12 +32,10 @@
     <p class="font"> The goal of the program is to prepare students for continued study and success in computer science and related STEM fields while developing the technical skills, creativity, collaboration, communication, and adaptability needed to thrive in a rapidly changing technological landscape. Students learn not only how to write code, but also how to design solutions, analyze data, develop algorithms, understand computing systems, consider the ethical implications of technology, and apply their knowledge to real-world problems.</p>
     <p class="font"> Students take a dedicated computer science course each year, with a progression that builds from foundational principles and programming to advanced computer science concepts, data structures and algorithms, cybersecurity, web development, discrete mathematics, artificial intelligence, and independent application of these skills.</p>
 
-    <div class="carousel">
-        <button id="left" onclick="left()"> ← </button>
-            <img class="slides" src="https://i.ytimg.com/vi/CxGSnA-RTsA/hqdefault.jpg">
-            <img class="slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC419YNLNoMlVD9UEzQbpVPLFnxwy7xSdbrMFJ4holrAcQeIO_OUa7HCfD&s=10">
-            <img class="slides" src="https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26100309/blur-close-up-code-computer-546819.jpg">
-        <button id="right" onclick="right()"> → </button>
+    <div id="carousel">
+        <a id="left" onclick="left()">←</a>
+        <img id="carousel-img" src="https://i.ytimg.com/vi/CxGSnA-RTsA/hqdefault.jpg">
+        <a id="right" onclick="right()">→</a>
     </div>
 
 
