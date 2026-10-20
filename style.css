@@ -1,39 +1,3 @@
-#sidebar {
-    background-color: gold;
-    position: fixed !important;
-    display: inline-block;
-    height: 100%;
-    width: 17%;
-
-    .sidestuff {
-        text-align: center;
-        color: black;
-        margin-bottom: 50px;
-    }
-    #sideFontTitle {color: black; text-align: center; margin-top: 75px; margin-bottom: 20px;}
-    .sideFont {
-        color: black;
-        text-align: center;
-        cursor: pointer;
-        padding: 20px;
-    }
-    .sidestuff:hover {
-        color: black;
-        text-align: center;
-        cursor: pointer;
-        background-color: white;
-    }
-
-    #hamburger {
-        position: fixed;
-        background-color: gold;
-        border: 1px solid black;
-        cursor: pointer;
-        margin-left: 5px;
-        margin-top: 5px;
-    }
-}
-
 body {
     background-color: rgb(28,69,135);
     color: white;
@@ -142,21 +106,42 @@ body {
         }
     }
 
+    #sidebar {
+        background-color: gold;
+        position: fixed !important;
+        display: inline-block;
+        height: 100%;
+        width: 17%;
 
-}
+        .sidestuff {
+            text-align: center;
+            color: black;
+            margin-bottom: 50px;
+        }
+        #sideFontTitle {color: black; text-align: center; margin-top: 75px; margin-bottom: 20px;}
+        .sideFont {
+            color: black;
+            text-align: center;
+            cursor: pointer;
+            padding: 20px;
+        }
+        .sidestuff:hover {
+            color: black;
+            text-align: center;
+            cursor: pointer;
+            background-color: white;
+        }
 
-body {
-    background-color: rgb(28, 69, 135);
-    h1 {
-        color: white;
+        #hamburger {
+            position: fixed;
+            background-color: gold;
+            border: 1px solid black;
+            cursor: pointer;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
     }
-    p {
-        color: white;
-    }
 }
-
-
-
 .ap-logo {
     position: relative;
     right: 10vh;
