@@ -105,7 +105,6 @@ body {
             cursor: pointer;
         }
     }
-
     #sidebar {
         background-color: gold;
         position: fixed !important;
@@ -141,81 +140,81 @@ body {
             margin-top: 5px;
         }
     }
-}
-.ap-logo {
-    position: relative;
-    right: 10vh;
-    left: 164vh;
-    bottom: 8vh;
+    .ap-logo {
+        position: relative;
+        right: 10vh;
+        left: 164vh;
+        bottom: 8vh;
 
-    height: 6vh;
-    width: 10vh;
-}
-
-
-.body-images {
-    height: 30vh;
-    width: 30vh;
-}
-
-
-
-
-#navbar-left {
-    h2 {
-        text-align: center;
+        height: 6vh;
+        width: 10vh;
     }
 
-    top: 0;
 
-    a {
+    .body-images {
+        height: 30vh;
+        width: 30vh;
+    }
+
+
+
+
+    #navbar-left {
+        h2 {
+            text-align: center;
+        }
+
+        top: 0;
+
+        a {
+            margin: 0;
+            display: flex;
+            padding: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+        #internal-courses {
+            text-align: center; !important
+        }
+    }
+
+    body {
         margin: 0;
-        display: flex;
-        padding: 40px;
+    }
+
+    #internal-courses {
+        display: none;
+        a {
+            padding: 10px;
+            text-align: center;
+        }
         text-align: center;
-        text-decoration: none;
-        color: black;
     }
 
-    a:visited {
-        color: black;
-    }
-
-    a:hover {
-        background-color: white;
+    #hamburger {
+        font-size: 30px;
+        text-align: left;
+        border: black solid 1px;
+        padding: 5px;
         cursor: pointer;
     }
-    #internal-courses {
-        text-align: center; !important
+
+    #burger2 {
+        font-size: 30px;
+        text-align: left;
+        padding: 5px;
+        cursor: pointer;
+        display: none;
+        color: white;
     }
-}
-
-body {
-    margin: 0;
-}
-
-#internal-courses {
-    display: none;
-    a {
-        padding: 10px;
-        text-align: center;
-    }
-    text-align: center;
-}
-
-#hamburger {
-    font-size: 30px;
-    text-align: left;
-    border: black solid 1px;
-    padding: 5px;
-    cursor: pointer;
-}
-
-#burger2 {
-    font-size: 30px;
-    text-align: left;
-    padding: 5px;
-    cursor: pointer;
-    display: none;
-    color: white;
 }
