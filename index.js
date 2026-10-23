@@ -1,13 +1,13 @@
 const links = ["https://i.ytimg.com/vi/CxGSnA-RTsA/hqdefault.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC419YNLNoMlVD9UEzQbpVPLFnxwy7xSdbrMFJ4holrAcQeIO_OUa7HCfD&s=10", "https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26100309/blur-close-up-code-computer-546819.jpg"]
 let index = 0;
 
-function right() {
+function rightButton() {
     let img = document.getElementById("carousel-img");
     let currentLink = img.getAttribute("src");
 
     if (index === 0) {
         img.src = links[index + 1]
-        index++
+        index++;
     }
     else if (index === 1) {
         img.src = links[2]
@@ -18,7 +18,7 @@ function right() {
     }
 }
 
-function left() {
+function leftButton() {
     let img = document.getElementById("carousel-img");
     let currentLink = img.getAttribute("src");
 
@@ -35,32 +35,32 @@ function left() {
     }
 }
 
-function courses() {
-    let sidebar = document.getElementById("internal-courses")
-    let shown = sidebar.style.display;
+function coursesNav() {
+    let sidebarNav = document.getElementById("internal-courses")
+    let shown = sidebarNav.style.display;
     if (shown === "") {
-        sidebar.style.display = "block";
+        sidebarNav.style.display = "block";
     } else {
-        sidebar.style.display = "";
+        sidebarNav.style.display = "";
     }
 }
 
-function burger() {
+function onBurger() {
     let sidebarNav = document.getElementById("navbar-left")
     let shown = sidebarNav.style.display;
     if (shown === "inline-block") {
         sidebarNav.style.display = "none";
-        let hiddenBurger = document.getElementById("burger2");
+        let hiddenBurger = document.getElementById("offBurger");
         hiddenBurger.style.display = "flex";
     } else {
         sidebarNav.style.display = "inline-block";
     }
 }
 
-function ____() {
+function offBurger() {
     let sidebarNav = document.getElementById("navbar-left")
     let shown = sidebarNav.style.display;
     sidebarNav.style.display = "inline-block";
-    let hiddenBurger = document.getElementById("burger2");
+    let hiddenBurger = document.getElementById("offBurger");
     hiddenBurger.style.display = "none";
 }
